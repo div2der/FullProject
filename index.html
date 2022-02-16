@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/6ff6d171d8.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+  <script src="https://unpkg.com/scrollreveal"></script>
+	<title>News Portal</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+        <a href="index.html" class="navbar-brand"><img src="images/logo.png" height = "50" width = "50" ></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active"><a href="index.html" class="nav-link" id = "mainpage">Main</a></li>
+      <li class="nav-item"><a href="pages/world.html" class="nav-link" id = "worldpage">World</a></li>
+      <li class="nav-item"><a href="pages/science.html" class="nav-link" id = "sciencepage">Science</a></li>
+      <li class="nav-item"><a href="pages/politics.html" class="nav-link" id = "politicspage">Politics</a></li>
+      <li class="nav-item"><a class = "btn btn-primary" href = "pages/registration_form.html" role = "button" id = "registerpage">Register</a></li>
+     </ul>
+   </nav>
+   	<div id = "title">
+   		<h1 style = "text-align: center;">Welcome to the News Portal!</h1>
+   		<h3 style = "text-align: center">Read about everything happening around the world</h3>
+   	</div>
+	<div id="pages" class="carousel slide container-fluid" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#pages" data-slide-to="0" class="active"></li>
+			<li data-target="#pages" data-slide-to="1"></li>
+			<li data-target="#pages" data-slide-to="2"></li>
+		</ol>
+	  <div class="carousel-inner">
+	    <div class="carousel-item active">
+	    	<a href = "pages/world.html"><img style = "width: 100%; margin: auto;" src = "images/world.jpg" alt = "First slide"></a>
+	    	<div class="carousel-caption d-none d-md-block">
+			    <h1>World news</h1>
+			    <h5>Tsunami threat recedes after Tonga volcanic eruption</h5>
+			</div>
+	    </div>
+	    <div class="carousel-item">
+	    	<a href = "pages/science.html"><img style = "width: 140%; margin: auto;" src = "images/science.jpg" alt = "Second slide"></a>
+	    	<div id = "caption2" class = "carousel-caption d-none d-md-block">
+	    		<h1>Science news</h1>
+	    		<h5>New Planet Is Largest Discovered That Orbits Two Suns</h5>
+	    	</div>
+	    </div>
+	    <div class="carousel-item">
+	    	<a href = "pages/politics.html"><img id = "image3" style = "width: 100%; margin: auto;" src = "images/politics.jpg" alt = "Third slide"></a>
+	    	<div id = "caption3" class = "carousel-caption d-none d-md-block">
+	    		<h1>Politics news</h1>
+	    		<h5>Boris Johnson will address No 10 ‘party culture’, says Tory chief</h5>
+	    	</div>
+	    </div>
+	  </div>
+	  <a class="carousel-control-prev" href="#pages" role="button" data-slide="prev">
+	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	    <span class="sr-only">Previous</span>
+	  </a>
+	  <a class="carousel-control-next" href="#pages" role="button" data-slide="next">
+	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	    <span class="sr-only">Next</span>
+	  </a>
+	</div><br><br><br>
+   <div class="container-fluid padding">
+     <div class="row text-center padding">
+       <div class="col-xs-12 col-sm-6 col-md-4">
+       	<i class="fas fa-bullhorn fa-3x"></i>
+       	<hr>
+        <h3>We publish the latest news</h3>
+       </div>
+       <div class="col-xs-12 col-sm-6 col-md-4">
+       	<i class="fas fa-check fa-3x"></i>
+       	<hr>
+        <h3>Only reliable news</h3>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <i class="fas fa-thumbs-up fa-3x"></i>
+        <hr>
+        <h3>People trust us</h3>
+      </div>
+  	 </div>
+	</div><br><br><br>
+	<div id="testimonials" class="carousel slide container-fluid" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#pages" data-slide-to="0" class="active"></li>
+			<li data-target="#pages" data-slide-to="1"></li>
+		</ol>
+	  <div class="carousel-inner">
+	    <div class="carousel-item active">
+	    	<img style = "width: 100%; margin: auto;" src = "images/testimonials1.jpg" alt = "First slide">
+	    	<div class="carousel-caption d-none d-md-block">
+			    <h2><em>"News Portal provides excellent information on situations around the world. I read it cover to cover"</em></h2>
+			    <h4>Isabella Smith</h4>
+			</div>
+	    </div>
+	    <div class="carousel-item">
+	    	<img style = "width: 100%; margin: auto;" src = "images/testimonials2.jpg" alt = "Second slide">
+	    	<div id = "testimonials2" class = "carousel-caption d-none d-md-block">
+	    		<h2><em>"It is the one of the news portal that I read from front to back because it always has great articles without a lot of fluff!"</em></h2>
+	    		<h4>Emily Rose</h4>
+	    	</div>
+	    </div>
+	  </div>
+	  <a class="carousel-control-prev" href="#testimonials" role="button" data-slide="prev">
+	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	    <span class="sr-only">Previous</span>
+	  </a>
+	  <a class="carousel-control-next" href="#testimonials" role="button" data-slide="next">
+	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	    <span class="sr-only">Next</span>
+	  </a>
+	</div><br><br>
+	<a class = "changemode">Change theme</a>
+	<a href = "#" class = "tothetop">Go to the top of the page</a>
+	<script src = "scrollAndTheme.js"></script>
+</body>
+</html>

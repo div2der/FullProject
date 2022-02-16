@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="https://unpkg.com/scrollreveal"></script>
+	<title>Registration form</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+        <a href="../index.html" class="navbar-brand"><img src="../images/logo.png" height = "50" width = "50" ></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item "><a href="../index.html" class="nav-link">Main</a></li>
+      <li class="nav-item "><a href="world.html" class="nav-link">World</a></li>
+      <li class="nav-item "><a href="science.html" class="nav-link">Science</a></li>
+      <li class="nav-item active"><a href="politics.html" class="nav-link">Politics</a></li>
+      <li class="nav-item"><a class = "btn btn-primary" href = "registration_form.html" role = "button" id = "registerpage">Register</a></li>
+    </ul>
+  </nav>
+	<div style = "margin:0 auto; width:300px;">
+		<form onsubmit = "return false">
+			<br>
+			<legend	>Register</legend><br>
+			<div class = "form-group">
+				<label for = "username">Username</label>
+				<input type = "text" class = "form-control" id = "username" name = "username" style = "width: auto;" maxlength = "15"><p id = "username_error" style = "display: inline-block; color: red;"></p>
+			</div>
+			<div class = "form-group">
+				<label for = "password">Password</label>
+				<input type = "password" class = "form-control" id = "password" name = "password" style = "width: auto;"><button type = "button" class = "btn btn-primary" id = "showpassword" value = "show">Show</button><p id = "password_error" style = "display: inline-block;  color: red;"></p>
+			</div>
+			<div class = "form-group">
+				<label for = "confirmation">Confirm password</label>
+				<input type = "password" class = "form-control" id = "confirmation" name = "confirmation" style = "width: auto;"><p id = "confirm_error" style = "display: inline-block; color: red;"></p>
+			</div>
+			<input type = "checkbox" id = "check" name = "boxcheck"> I agree to the terms and conditions<br>
+			<button type="button" class="btn btn-primary" id = "register" disabled = 'disabled'>Register</button>
+			<br>
+			<p id = "success" style = "color: green;"></p>
+			<script src="../index.js"></script>
+		</form>
+	</div>
+</body>
+</html>
